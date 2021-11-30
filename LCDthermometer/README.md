@@ -15,6 +15,7 @@ an LED strip as an output, this sensor network was able to detect the distance o
 distance from the URF results in more LEDs being lit up to represent the increased distance. I couldnèt find a real need for a URF in my life, so my first step was to replace
 the sensor and choose something which I thought would add more value to my life than detecting distance - temperature.
 
+![LEDstripURF](https://user-images.githubusercontent.com/33913141/144129281-4d4bb6da-3713-4bb9-be24-c0350a4b07c0.jpg)
 
 **Prototype 2**
 
@@ -24,7 +25,13 @@ represent the greater value. The next issues I realized was how inaccurate this 
 on the strip) or negative values. This is because the temperature value is mapped to the 8 LEDs. In my case, using a maxmimum temperature value of 40, each LED would represent
 5 degrees - a fairly significant number. I decided it would be better to switch the LED strip for something a little more human-friendly.
 
+![LEDstripTHERMOMETER](https://user-images.githubusercontent.com/33913141/144129314-a341689a-9762-4c7f-a57e-eb049f3dec82.jpg)
+
+
 **Final Build**
 
 In the final build, LCDtheremometer, I switched the LED strip from a liquid crystal display (LCD) which I found was much more accurate, and much easier to read. It reduces the amount of mental
 math I need to do whenever I want to know the temperature, and let's be honest - visually appealing.
+
+![LCDthermometer](https://user-images.githubusercontent.com/33913141/144129329-fab20756-0b29-436e-a109-5b38f9693be5.jpg)
+
