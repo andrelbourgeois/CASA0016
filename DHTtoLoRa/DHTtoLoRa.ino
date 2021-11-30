@@ -31,7 +31,7 @@ void loop() {
   debugSerial.println("-- LOOP");
 
   uint16_t humidity = 100*dht.readHumidity(false);
-  
+
 
   // false: Celsius (default)
   // true: Farenheit

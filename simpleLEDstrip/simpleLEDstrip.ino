@@ -13,7 +13,15 @@ void setup() {
 void loop() {
   pixels.clear(); // clears the LED strip (turns everything off)
   for(int i=0; i<NUMPIXELS; i++) { // create a for loop to iterate through each LED
-    pixels.setPixelColor(i, 150, 20, 20); // sets the LED colour
+    //pixels.setPixelColor(i, 20, 20, 50);
+    pixels.setPixelColor(1, 0, 0, 0); // sets the LED colour
+    pixels.setPixelColor(2, 0, 0, 0); // sets the LED colour
+    pixels.setPixelColor(3, 0, 0, 256); // sets the LED colour
+    pixels.setPixelColor(4, 0, 0, 256); // sets the LED colour
+    pixels.setPixelColor(5, 256, 0, 256); // sets the LED colour
+    pixels.setPixelColor(6, 256, 0, 256); // sets the LED colour
+    pixels.setPixelColor(7, 256, 0, 0); // sets the LED colour
+    pixels.setPixelColor(8, 256, 0, 0); // sets the LED colour
     pixels.show(); // turns on each LED in sequence
     delay(DELAYVAL);
   }

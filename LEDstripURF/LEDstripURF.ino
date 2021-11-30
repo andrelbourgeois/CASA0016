@@ -40,21 +40,9 @@ void loop() {
   int value = map(round(distance), 0, 30, 0, 8);
 
    for(int i=1; i<=value; i++) { // create a for loop to iterate through each LED
-    pixels.setPixelColor(i, 150, 20, 20); // sets the LED colour
+    pixels.setPixelColor(i, 20, 20, 50);
     pixels.show(); // turns on each LED in sequence
    }
-   delay(500);
-
-/*
-
-
-
-
-  pixels.setPixelColor(value, 150, 20, 20); // sets the LED colour
-  pixels.show();
-  delay(DELAYVAL);
-
-  }
- */
+   delay(DELAYVAL);
 
 }
