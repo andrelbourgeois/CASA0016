@@ -44,6 +44,9 @@ on the strip) or negative values. This is because the temperature value is mappe
 
 In the final build, LCDtheremometer, I switched the LED strip from a liquid crystal display (LCD) which I found was much more accurate, and much easier to read. It reduces the amount of mental math I need to do whenever I want to know the temperature, and let's be honest - visually appealing.
 
+- Step 1:\
+
+
 ![LCDthermometer](https://user-images.githubusercontent.com/33913141/144129329-fab20756-0b29-436e-a109-5b38f9693be5.jpg)
 
 **Problems & Solutions**
@@ -51,9 +54,12 @@ In the final build, LCDtheremometer, I switched the LED strip from a liquid crys
 - Problem: My LCD turned on my it's just a blank screen.\
 Solution: Add a potentiometer which can adjust the resolution on the LCD.
 
-- Problem: My DHT22 was not giving a temperature value and instead, my LCD was reading "Nan"\
+- Problem: My DHT22 was not giving a temperature value and instead, my LCD was reading "Nan".\
 Solution: "Nan" stands for "Not a number" - I realized that the temperature value was staying a blank floating point number, and was not recieving a value from the DHT22.
 I also realized that the DHT22 was not oriented properly. By rotating it 90° and adjusting the wires accordingly, I was able to recieve the correct value.
+
+- Problem: LCD showing a lot of random  characters and symbols - looks like an alien language.\
+Solution: I'm not actually sure what the issue is here, but unplugging the board and plugging it back into the computer fixes this issue every time.
 
 **Next Steps**
 
@@ -61,4 +67,6 @@ I also realized that the DHT22 was not oriented properly. By rotating it 90° an
 because I would like to be able to use this indoors as well. I think a battery would be suitable, however, the lithium battery that I currently have is only 3.7 volts,
 and isn't strong enough to run my 5 volt build.
 - I coded in a starting screen for my LCD. It doesn't show up when my LCD starts, or maybe it shows up too quickly to see, but I would like to fix this as well.
+- Add an enclosure
+- Add in setp-by-step to the READMEM.md
 
