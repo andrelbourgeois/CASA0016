@@ -48,11 +48,11 @@ In the final build, LCDtheremometer, I switched the LED strip from a liquid crys
 
 **Problems & Solutions**
 
-- Problem: My LCD turned on my it's just a blank screen.
-- Solution: Add a potentiometer which can adjust the resolution on the LCD.
+- Problem: My LCD turned on my it's just a blank screen.\
+Solution: Add a potentiometer which can adjust the resolution on the LCD.
 
-- Problem: My DHT22 was not giving a temperature value and instead, my LCD was reading "Nan"
-- Solution: "Nan" stands for "Not a number" - I realized that the temperature value was staying a blank floating point number, and was not recieving a value from the DHT22.
+- Problem: My DHT22 was not giving a temperature value and instead, my LCD was reading "Nan"\
+Solution: "Nan" stands for "Not a number" - I realized that the temperature value was staying a blank floating point number, and was not recieving a value from the DHT22.
 I also realized that the DHT22 was not oriented properly. By rotating it 90° and adjusting the wires accordingly, I was able to recieve the correct value.
 
 **Next Steps**
