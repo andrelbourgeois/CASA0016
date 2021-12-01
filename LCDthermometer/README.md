@@ -7,6 +7,18 @@ By André Bourgeois
 The intent of this project was to create a sensor system that would help to inform my understanding of the world. The resulting design was an iteration on previous projects
 that I completed throughout this course - resulting in the capture of data that I care about, displayed in a way that I can easily understand.
 
+# Materials
+- Arduion Uno
+- Breadboard
+- Plastic Arduino Base
+- USB Cable
+- DHT22 Temperature/Humidity Sensor
+- LCD Screen
+- Potentiometer
+- 220 Resistor
+- Transistor
+- Wires
+
 # The Process
 **Prototype 1**
 
@@ -30,8 +42,14 @@ on the strip) or negative values. This is because the temperature value is mappe
 
 **Final Build**
 
-In the final build, LCDtheremometer, I switched the LED strip from a liquid crystal display (LCD) which I found was much more accurate, and much easier to read. It reduces the amount of mental
-math I need to do whenever I want to know the temperature, and let's be honest - visually appealing.
+In the final build, LCDtheremometer, I switched the LED strip from a liquid crystal display (LCD) which I found was much more accurate, and much easier to read. It reduces the amount of mental math I need to do whenever I want to know the temperature, and let's be honest - visually appealing.
 
 ![LCDthermometer](https://user-images.githubusercontent.com/33913141/144129329-fab20756-0b29-436e-a109-5b38f9693be5.jpg)
+
+**Next Steps**
+
+- My current build is not mobile, so I would like to attach a mobile power source to it. Something that does not rely on external factors for power - like solar panels - 
+because I would like to be able to use this indoors as well. I think a battery would be suitable, however, the lithium battery that I currently have is only 3.7 volts,
+and isn't strong enough to run my 5 volt build.
+- I coded in a starting screen for my LCD. It doesn't show up when my LCD starts, or maybe it shows up too quickly to see, but I would like to fix this as well.
 
