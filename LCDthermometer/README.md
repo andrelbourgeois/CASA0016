@@ -46,6 +46,15 @@ In the final build, LCDtheremometer, I switched the LED strip from a liquid crys
 
 ![LCDthermometer](https://user-images.githubusercontent.com/33913141/144129329-fab20756-0b29-436e-a109-5b38f9693be5.jpg)
 
+**Problems & Solutions**
+
+- Problem: My LCD turned on my it's just a blank screen.
+- Solution: Add a potentiometer which can adjust the resolution on the LCD.
+
+- Problem: My DHT22 was not giving a temperature value and instead, my LCD was reading "Nan"
+- Solution: "Nan" stands for "Not a number" - I realized that the temperature value was staying a blank floating point number, and was not recieving a value from the DHT22.
+I also realized that the DHT22 was not oriented properly. By rotating it 90° and adjusting the wires accordingly, I was able to recieve the correct value.
+
 **Next Steps**
 
 - My current build is not mobile, so I would like to attach a mobile power source to it. Something that does not rely on external factors for power - like solar panels - 
