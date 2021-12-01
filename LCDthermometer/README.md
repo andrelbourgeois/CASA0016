@@ -69,4 +69,5 @@ and isn't strong enough to run my 5 volt build.
 - I coded in a starting screen for my LCD. It doesn't show up when my LCD starts, or maybe it shows up too quickly to see, but I would like to fix this as well.
 - Add an enclosure
 - Add in setp-by-step to the README.md
+- Add a fritzing diagram
 
