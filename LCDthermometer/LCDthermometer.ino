@@ -17,7 +17,7 @@ void setup() {
   pinMode(DHTPIN, INPUT); //set the DHTPIN to receieve sensor information
   dht.begin(); // start the DHT sensor
 
-  lcd.begin(16, 2); // start LED strip
+  lcd.begin(16, 2); // start LCD screen
   lcd.print("Here is the");
   lcd.setCursor(0,1);
   lcd.print("temperature!");
