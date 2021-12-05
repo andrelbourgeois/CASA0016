@@ -61,7 +61,9 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 ![image](https://user-images.githubusercontent.com/33913141/144763590-ce748474-0e8e-4afa-94c3-331f75278e5d.png)
 
 **Process**
-![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/144763605-0cd9474a-808f-40e1-bd7f-9f76559a8378.png)
+- Build the circuit
+![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/144763669-d106844f-6d9d-42cb-a0bd-f62c9e4dbc8b.png)
+- Probably code
 
 
 **Problems & Solutions**
