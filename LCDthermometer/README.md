@@ -16,7 +16,6 @@ that I completed throughout this course - resulting in the capture of data that 
 - LCD Screen
 - Potentiometer
 - 220 Resistor
-- Transistor
 - Wires
 
 # The Process
