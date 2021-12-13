@@ -6,7 +6,7 @@
 boolean buttonPressed = false;
 
 void setup() {
-  // set digital pin 2 to act as an output
+  // set digital pins to act as outputs and inputs
    pinMode(redLED, OUTPUT);
    pinMode(yellowLED, OUTPUT);
    pinMode(greenLED, OUTPUT);
@@ -20,18 +20,18 @@ void loop() {
     digitalWrite(greenLED, HIGH);   // turn the LED on (HIGH is the voltage level)
     buttonPressed = digitalRead(buttonPin);
   }
-  
+
   digitalWrite(greenLED, LOW);    // turn the LED off by making the voltage LOW
-  
+
   digitalWrite(yellowLED, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(2000);                    // wait for a second
   digitalWrite(yellowLED, LOW);   // turn the LED off by making the voltage LOW
-  
+
   digitalWrite(redLED, HIGH);     // turn the LED on (HIGH is the voltage level)
   delay(5000);                    // wait for two seconds
   digitalWrite(yellowLED, HIGH);
   delay(2000);                    // wait for a second
   digitalWrite(redLED, LOW);      // turn the LED off by making the voltage LOW
   digitalWrite(yellowLED, LOW);
-   
+
 }
