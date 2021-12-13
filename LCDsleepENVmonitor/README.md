@@ -82,4 +82,5 @@ Solution: I'm not actually sure what the issue is here, but unplugging the board
 - Add an enclosure - make a bed (DISPLAY INFO ON ENCLOSURE)
 - Add in step-by-step build instructions to the README.md
 - talk about the difficulty of determining lux and how i estimated it (find a better way as next step)
+- add portable powerbank
 
