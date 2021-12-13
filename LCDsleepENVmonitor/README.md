@@ -79,8 +79,8 @@ Solution: I'm not actually sure what the issue is here, but unplugging the board
 - Problem: 
 
 **Next Steps**
-- 
 - Add updated fritzing
+- Add a curcuit diagram
 - Add toggle switch - switch from current temp/light to average temp/light and "how did you sleep"
 - Add in a sleepquality variable - 1 - 5 based on the average temp/light
 - Add an enclosure - make a bed (DISPLAY INFO ON ENCLOSURE)
