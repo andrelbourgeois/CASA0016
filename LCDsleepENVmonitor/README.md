@@ -79,6 +79,6 @@ Solution: I'm not actually sure what the issue is here, but unplugging the board
 - Problem: 
 
 **Next Steps**
-- Add an enclosure
+- Add an enclosure - make a bed (DISPLAY INFO ON ENCLOSURE)
 - Add in step-by-step build instructions to the README.md
 
