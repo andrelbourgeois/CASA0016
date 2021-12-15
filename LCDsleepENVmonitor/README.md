@@ -45,7 +45,6 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 ![image](https://user-images.githubusercontent.com/33913141/146163996-e8c69995-6c03-443c-8ace-339b24578a22.png)
 ![image](https://user-images.githubusercontent.com/33913141/146163959-a48ca9de-e831-4371-ab26-a5999c735bd1.png)
 
-
 # Materials
 - Arduino Uno
 - Breadboard
@@ -55,16 +54,17 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 - LM35 Temperature Sensor
 - Light Dependant Resistor (LDR)
 - LCD Screen
+- Toggle Switch
 - Potentiometer
 - 220 Resistor
 - 10k Resistor x2
-- Toggle Switch
 - Wires
 
 **Process**
 - Build the circuit - Fritzing diagram developed with [Tinkercad](https://www.tinkercad.com)
 ![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/146167989-c9894a35-37c1-45f9-a3aa-a39177f68c22.png)
-- Probably code
+- Write the code
+- Build the enclosure
 
 
 **Problems & Solutions**
@@ -91,7 +91,8 @@ The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA a
 
 **Next Steps**
 - Add a curcuit diagram
-- Add in step-by-step build instructions to the README.md
-- Adapt the build to a wifi-enabled board (arduino wifi rev2)
+- Improve step-by-step build instructions
+- Adapt the build to a wifi-enabled board (arduino wifi rev2)\
+Will allow me to send data via wifi to my raspberri pi and track trends with Grafana
 - Improve enclosure by 3D printing
 
