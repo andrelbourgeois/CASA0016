@@ -38,8 +38,8 @@ temperature, and let's be honest - visually appealing.
 
 **Final Build**
 
-For the final build, LCDsleepENVmonitor, I switched the DHT22 Temperature and Hunidity Sensor for a simpler LM35 Temperature Sensor and added a Light Dependant resistor.
-The goal of these two sensors, is to monitor the light and temperature of a room over several hours in the most simplistic way possible.
+For the final build, LCDsleepENVmonitor, I switched the DHT22 Temperature and Humidity Sensor for a simpler LM35 Temperature Sensor and added a Light Dependant resistor.
+The goal of these two sensors, is to monitor the light and temperature of a room over several hours in the most simplistic way possible - without intaking any unnecessary data. Additionally, I added a toggle switch to change the LCD display from showing current light and temperature readings to average light and temperature readings and an estimated sleep quality. On a non-technical note, I added an enclosure made of tape and cardboard that is supposed to resemble a bed - complete with phyiscal documenation regarding what this device does as well as who to contact for more information.
 
 ![image](https://user-images.githubusercontent.com/33913141/146164067-ceca5c1d-6d43-4fef-b496-43499c5d8fd6.png)
 ![image](https://user-images.githubusercontent.com/33913141/146163996-e8c69995-6c03-443c-8ace-339b24578a22.png)
