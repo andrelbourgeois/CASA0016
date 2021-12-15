@@ -92,7 +92,8 @@ The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA a
 
 **Next Steps**
 - Add a curcuit diagram to README.md
-- Improve step-by-step build instructions
+- Improve step-by-step build instructions\
+Section-off code and circuit builds to individual builds ie. Step 1 - Build temperature circuit + write temperature sensing code // step 5 - build LCD circuit and write code
 - Adapt the build to a wifi-enabled board (arduino wifi rev2)\
 Will allow me to send data via wifi to my raspberri pi and track trends with Grafana
 - Improve enclosure by 3D printing
