@@ -41,7 +41,10 @@ temperature, and let's be honest - visually appealing.
 For the final build, LCDsleepENVmonitor, I switched the DHT22 Temperature and Hunidity Sensor for a simpler LM35 Temperature Sensor and added a Light Dependant resistor.
 The goal of these two sensors, is to monitor the light and temperature of a room over several hours in the most simplistic way possible.
 
-![image](https://user-images.githubusercontent.com/33913141/144763590-ce748474-0e8e-4afa-94c3-331f75278e5d.png)
+![image](https://user-images.githubusercontent.com/33913141/146164067-ceca5c1d-6d43-4fef-b496-43499c5d8fd6.png)
+![image](https://user-images.githubusercontent.com/33913141/146163996-e8c69995-6c03-443c-8ace-339b24578a22.png)
+![image](https://user-images.githubusercontent.com/33913141/146163959-a48ca9de-e831-4371-ab26-a5999c735bd1.png)
+
 
 # Materials
 - Arduino Uno
@@ -50,11 +53,12 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 - Push Button
 - USB Cable
 - LM35 Temperature Sensor
-- Light Dependant Resistor
+- Light Dependant Resistor (LDR)
 - LCD Screen
 - Potentiometer
 - 220 Resistor
-- 10k Resistor
+- 10k Resistor x2
+- Toggle Switch
 - Wires
 
 **Process**
@@ -74,17 +78,25 @@ Solution: "Nan" stands for "Not a number" - I realized that the temperature valu
 I also realized that the DHT22 was not oriented properly. By rotating it 90° and adjusting the wires accordingly, I was able to recieve the correct value.
 
 - Problem: LCD showing a lot of random  characters and symbols - looks like an alien language.\
-Solution: I'm not actually sure what the issue is here, but unplugging the board and plugging it back into the computer fixes this issue every time.
+Solution: I'm not actually sure what the issue is here, but unplugging the board and plugging it back into the computer fixes this issue every time
 
-- Problem: 
+- Problem: Determing radiance in a similar way to the human eye.\
+Solution: This build doesn't have to be as accurate as the human eye, and mapping the LDR reading in a linear fashion provided data that was accurate enough to estimate light levels in a room.\
+According to my research, maximum Lx in a brightly lit room is ~ 1000, so by mapping that to the lowest reading on my LDR and mapping the highest LDR reading (1023) to 0, I was able to get an effective estimation of light levls and therefore, sleep quality.
+
+**Highlights**
+- Proper wiring conventions (Red for positive and green for ground)
+- Effective device communication on enclosure
+- Run-time with my battery\
+The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA and the LCD screen is pulling ~1.1mA (these are estimations I found online), this build will run for ~ 393 hours, or ~16 days. However, assuming that this build is only ran over 8 hours of sleep per day, one could potentially go ~ 7 weeks between charging.
 
 **Next Steps**
 - Add updated fritzing
 - Add a curcuit diagram
-- Add toggle switch - switch from current temp/light to average temp/light and "how did you sleep"
-- Add in a sleepquality variable - 1 - 5 based on the average temp/light
-- Add an enclosure - make a bed, sketch it first (DISPLAY INFO ON ENCLOSURE)
 - Add in step-by-step build instructions to the README.md
-- Talk about the difficulty of determining lux and how i estimated it (find a better way as next step)
-- Add portable powerbank
+- Talk about proper wiring conventions
+- Talk about bettery life length
+- Talk about communication on enclosure
+- Adapt the build to a wifi-enabled board (arduino wifi rev2)
+- Improve enclosure by 3D printing
 
