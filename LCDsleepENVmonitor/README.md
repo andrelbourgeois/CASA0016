@@ -64,7 +64,7 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 - Build the circuit - Fritzing diagram developed with [Tinkercad](https://www.tinkercad.com)
 ![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/146167989-c9894a35-37c1-45f9-a3aa-a39177f68c22.png)
 - Write the code\
-For this application, the code is written to assume that optimal light levels are as low as possible, and optimal temperature levels are between 15-20C.
+For this application, the code is written to assume that optimal light levels are as low as possible, and optimal temperature levels are between 15-20°C.
 - Build the enclosure
 
 
@@ -90,6 +90,7 @@ According to my research, maximum Lx in a brightly lit room is ~ 1000, so by map
 - External battery
 - Run-time with my battery\
 The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA and the LCD screen is pulling ~1.1mA (these are estimations I found online), this build will run for ~ 393 hours, or ~16 days. However, assuming that this build is only ran over 8 hours of sleep per day, one could potentially go ~ 7 weeks between charging.
+- Testing results: Light levels are generally below ~10Lx and temperature was usually ~18°C
 
 **References**
 - CASA0016 Course Material (general software and hardware information)
