@@ -91,7 +91,7 @@ According to my research, maximum Lx in a brightly lit room is ~ 1000, so by map
 The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA and the LCD screen is pulling ~1.1mA (these are estimations I found online), this build will run for ~ 393 hours, or ~16 days. However, assuming that this build is only ran over 8 hours of sleep per day, one could potentially go ~ 7 weeks between charging.
 
 **Next Steps**
-- Add a curcuit diagram
+- Add a curcuit diagram to README.md
 - Improve step-by-step build instructions
 - Adapt the build to a wifi-enabled board (arduino wifi rev2)\
 Will allow me to send data via wifi to my raspberri pi and track trends with Grafana
