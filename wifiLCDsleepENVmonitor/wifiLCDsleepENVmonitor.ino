@@ -1,4 +1,6 @@
 #include <LiquidCrystal.h>
+#include <ezTime.h>
+
 
 #define lightPin A2 //set analog pin to recieve light level value
 #define tempPin A0 // set analog pin to recieve temperature value#define Vcc 5.0 // board voltage
@@ -23,15 +25,39 @@ float sleepQuality; // declare a variable for sleep quality
 int readingCount = 0; // declare a counter variable to remember how many readings
 // have been completed
 
+// wifi & MQTT
+#include "arduino_secrets.h"
+
+const char* ssid     = SECRET_SSID;
+const char* password = SECRET_PASS;
+const char* mqttuser = SECRET_MQTTUSER;
+const char* mqttpass = SECRET_MQTTPASS;
+
+ESP8266WebServer server(80); // CHANGE
+const char* mqtt_server = "mqtt.cetools.org";
+WiFiClient espClient; //CHANGE
+// PubSubClient client(espClient);
+long lastMsg = 0;
+char msg[50];
+int value = 0;
+
+// Dater & Time
+Timezone GB;
+
 void setup()
 {
-  Serial.begin(9600); // start serial connection
+  Serial.begin(9600); // open serial connection
+  delay(100) // for debug info
 
   pinMode(switchPin, INPUT);
 
+  startWifi(); // CHANGE?
+  startWebserver(); // CHANGE?
+  syncDate(); // CHANGE?
+
   lcd.begin(16, 2); // start LCD screen
-  lcd.print("How did");
-  lcd.setCursor(0,1); // write an opening message to the LCD
+  lcd.print("How well did");
+  lcd.setCursor(0,1);
   lcd.print("you sleep?");
   delay(5000);
 }
@@ -69,14 +95,14 @@ void loop()
     lightSum += light; // add current light reading to the light sum
 
     lcd.clear(); // clears the LCD screen
-    lcd.print("Current Temp");
+    lcd.print("Temperature ");
     lcd.setCursor(0,1);
     lcd.print(temp);
     lcd.print("C");
     delay(2000);
 
     lcd.clear();
-    lcd.print("Current Light");
+    lcd.print("Ambient Light ");
     lcd.setCursor(0,1);
     lcd.print(light);
     lcd.print("Lx");
@@ -141,7 +167,7 @@ void loop()
     delay(2000);
 
     lcd.clear();
-    lcd.print("Avg Light");
+    lcd.print("Avg Light ");
     lcd.setCursor(0,1);
     lcd.print(lightAvg);
     lcd.print("Lx");
@@ -168,7 +194,7 @@ void loop()
 
     if (sleepQuality < 2) // sleep quality is VERY BAD!
     {
-      lcd.print("Sleep Quality");
+      lcd.print("Sleep Quality ");
       lcd.setCursor(0,1);
       lcd.print("VERY BAD");
       delay(2000);
@@ -176,7 +202,7 @@ void loop()
 
     else if (sleepQuality >= 2 && sleepQuality < 4) // sleep quality is BAD!
     {
-      lcd.print("Sleep Quality");
+      lcd.print("Sleep Quality ");
       lcd.setCursor(0,1);
       lcd.print("BAD");
       delay(2000);
@@ -184,7 +210,7 @@ void loop()
 
     else if (sleepQuality >= 4 && sleepQuality < 5.99) // sleep quality was OKAY!
     {
-      lcd.print("Sleep Quality");
+      lcd.print("Sleep Quality ");
       lcd.setCursor(0,1);
       lcd.print("OKAY");
       delay(2000);
@@ -192,7 +218,7 @@ void loop()
 
     else if (sleepQuality >= 6 && sleepQuality < 7.99) // sleep quality was GOOD!
     {
-      lcd.print("Sleep Quality");
+      lcd.print("Sleep Quality ");
       lcd.setCursor(0,1);
       lcd.print("GOOD");
       delay(2000);
@@ -200,7 +226,7 @@ void loop()
 
     else if (sleepQuality >= 8) // sleep quality was GREAT!
     {
-      lcd.print("Sleep Quality");
+      lcd.print("Sleep Quality ");
       lcd.setCursor(0,1);
       lcd.print("GREAT");
       delay(2000);
