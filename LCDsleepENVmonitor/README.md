@@ -87,8 +87,14 @@ According to my research, maximum Lx in a brightly lit room is ~ 1000, so by map
 **Course-Specific Highlights**
 - Proper wiring conventions (Red for positive and green for ground)
 - Effective device communication on enclosure\
+- External battery
 - Run-time with my battery\
 The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA and the LCD screen is pulling ~1.1mA (these are estimations I found online), this build will run for ~ 393 hours, or ~16 days. However, assuming that this build is only ran over 8 hours of sleep per day, one could potentially go ~ 7 weeks between charging.
+
+**References**
+- CASA0016 Course Material (general software and hardware information)
+- Arduino Starter Kit Handbook (information specific to the LCD screen)
+- [The Sleep Foundation](https://www.sleepfoundation.org/) (for information on optimal levels of light and temperature for sleep)
 
 **Next Steps**
 - Add a curcuit diagram to README.md
