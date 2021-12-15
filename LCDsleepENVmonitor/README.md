@@ -105,5 +105,5 @@ Section-off code and circuit builds to individual builds ie. Step 1 - Build temp
 Will allow me to send data via wifi to my raspberri pi and track trends with Grafana
 - Improve enclosure by 3D printing + allocate internal space for battery + print out phyiscal communication instead of writing it
 - Attach a dimmer or another switch to reduce LCD light when in operation
-- Improve code by creating a function to call for light and temperature readings - will limit code repetitiveness
+- Improve light detection code create a function to call for light and temperature readings - will limit code repetitiveness
 
