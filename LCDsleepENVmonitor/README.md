@@ -42,7 +42,7 @@ For the final build, LCDsleepENVmonitor, I switched the DHT22 Temperature and Hu
 The goal of these two sensors, is to monitor the light and temperature of a room over several hours in the most simplistic way possible - without intaking any unnecessary data. Additionally, I added a toggle switch to change the LCD display from showing current light and temperature readings to average light and temperature readings and an estimated sleep quality. On a non-technical note, I added an enclosure made of tape and cardboard that is supposed to resemble a bed - complete with phyiscal documenation regarding what this device does as well as who to contact for more information.
 
 ![image](https://user-images.githubusercontent.com/33913141/146164067-ceca5c1d-6d43-4fef-b496-43499c5d8fd6.png)
-![image](https://user-images.githubusercontent.com/33913141/146163996-e8c69995-6c03-443c-8ace-339b24578a22.png)
+![image](https://user-images.githubusercontent.com/33913141/146175116-bec4e09a-e5d8-4dcd-91bf-f985831a5596.png)
 ![image](https://user-images.githubusercontent.com/33913141/146163959-a48ca9de-e831-4371-ab26-a5999c735bd1.png)
 
 # Materials
