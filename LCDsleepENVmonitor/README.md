@@ -62,9 +62,8 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 - Wires
 
 **Process**
-- Build the circuit
-- Note the use of [Tinkercad](https://www.tinkercad.com)
-![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/144763669-d106844f-6d9d-42cb-a0bd-f62c9e4dbc8b.png)
+- Build the circuit - Fritzing diagram developed with [Tinkercad](https://www.tinkercad.com)
+![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/146167989-c9894a35-37c1-45f9-a3aa-a39177f68c22.png)
 - Probably code
 
 
@@ -84,19 +83,15 @@ Solution: I'm not actually sure what the issue is here, but unplugging the board
 Solution: This build doesn't have to be as accurate as the human eye, and mapping the LDR reading in a linear fashion provided data that was accurate enough to estimate light levels in a room.\
 According to my research, maximum Lx in a brightly lit room is ~ 1000, so by mapping that to the lowest reading on my LDR and mapping the highest LDR reading (1023) to 0, I was able to get an effective estimation of light levls and therefore, sleep quality.
 
-**Highlights**
+**Course-Specific Highlights**
 - Proper wiring conventions (Red for positive and green for ground)
-- Effective device communication on enclosure
+- Effective device communication on enclosure\
 - Run-time with my battery\
 The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA and the LCD screen is pulling ~1.1mA (these are estimations I found online), this build will run for ~ 393 hours, or ~16 days. However, assuming that this build is only ran over 8 hours of sleep per day, one could potentially go ~ 7 weeks between charging.
 
 **Next Steps**
-- Add updated fritzing
 - Add a curcuit diagram
 - Add in step-by-step build instructions to the README.md
-- Talk about proper wiring conventions
-- Talk about bettery life length
-- Talk about communication on enclosure
 - Adapt the build to a wifi-enabled board (arduino wifi rev2)
 - Improve enclosure by 3D printing
 
