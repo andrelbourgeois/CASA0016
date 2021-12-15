@@ -63,7 +63,8 @@ The goal of these two sensors, is to monitor the light and temperature of a room
 **Process**
 - Build the circuit - Fritzing diagram developed with [Tinkercad](https://www.tinkercad.com)
 ![LCDsleepENVmonitor](https://user-images.githubusercontent.com/33913141/146167989-c9894a35-37c1-45f9-a3aa-a39177f68c22.png)
-- Write the code
+- Write the code\
+For this application, the code is written to assume that optimal light levels are as low as possible, and optimal temperature levels are between 15-20C.
 - Build the enclosure
 
 
