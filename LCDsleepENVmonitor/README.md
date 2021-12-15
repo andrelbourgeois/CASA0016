@@ -96,4 +96,5 @@ The specific battery I used is 20100mAh, assuming the arduino is pulling ~50mA a
 - Adapt the build to a wifi-enabled board (arduino wifi rev2)\
 Will allow me to send data via wifi to my raspberri pi and track trends with Grafana
 - Improve enclosure by 3D printing
+- Attach a dimmer or another switch to reduce LCD light when in operation
 
