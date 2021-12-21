@@ -134,14 +134,14 @@ void loop()
 
     lcd.clear(); // clears the LCD screen
 
-    lcd.print("Avg Temp");
+    lcd.print("Average Temp");
     lcd.setCursor(0,1);
     lcd.print(tempAvg);
     lcd.print("C");
     delay(2000);
 
     lcd.clear();
-    lcd.print("Avg Light");
+    lcd.print("Average Light");
     lcd.setCursor(0,1);
     lcd.print(lightAvg);
     lcd.print("Lx");
