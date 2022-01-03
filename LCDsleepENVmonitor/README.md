@@ -80,7 +80,7 @@ I also realized that the DHT22 was not oriented properly. By rotating it 90° an
 - Problem: LCD showing a lot of random  characters and symbols - looks like an alien language.\
 Solution: I'm not actually sure what the issue is here, but unplugging the board and plugging it back into the computer fixes this issue every time
 
-- Problem: Determing radiance in a similar way to the human eye.\
+- Problem: Determining radiance in a similar way to the human eye.\
 Solution: This build doesn't have to be as accurate as the human eye, and mapping the LDR reading in a linear fashion provided data that was accurate enough to estimate light levels in a room.\
 According to my research, maximum Lx in a brightly lit room is ~ 1000, so by mapping that to the lowest reading on my LDR and mapping the highest LDR reading (1023) to 0, I was able to get an effective estimation of light levls and therefore, sleep quality.
 
