@@ -118,7 +118,7 @@ void loop()
     the chunk of code used to get temperature and light would be more efficient
     as a function call, instead of rewriting it in both instances
     */
-    tempImpact = map(round(tempAvg), 15, 40, 5, 0);
+    tempImpact = map(round(tempAvg), 18, 40, 5, 0);
     lightImpact = map(round(lightAvg), 0, 1000, 5, 0);
 
     sleepQuality = tempImpact + lightImpact; // declare a variable for sleep quality
